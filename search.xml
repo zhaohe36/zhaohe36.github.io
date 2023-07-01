@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>“公网ipv6时代,还不来开启一下？”</title>
+      <link href="/%E2%80%9C%E5%85%AC%E7%BD%91ipv6%E6%97%B6%E4%BB%A3-%E8%BF%98%E4%B8%8D%E6%9D%A5%E5%BC%80%E5%90%AF%E4%B8%80%E4%B8%8B%EF%BC%9F%E2%80%9D.html"/>
+      <url>/%E2%80%9C%E5%85%AC%E7%BD%91ipv6%E6%97%B6%E4%BB%A3-%E8%BF%98%E4%B8%8D%E6%9D%A5%E5%BC%80%E5%90%AF%E4%B8%80%E4%B8%8B%EF%BC%9F%E2%80%9D.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/629974afe39b88bee7a789bc08ae118d.png" alt="img"></p><p>由于国家在大力推行公网IPV6，现在大多数的家庭宽带也是支持了IPV6公网ip的分配，IPV6地址数量之多可以给每个沙子设定一个公网ip，这也是未来发展大方向，在目前来看很鸡肋，但是在公网ipv4资源紧缺的情况下（<strong>中国特色稀缺资源，绷不住了，电信这些垄断企业是这样，卖了好多钱，实际上在外国都不怎么缺的</strong>），远程传输文件，部署一些服务还是不错地。</p><p>IPV6可以由光猫分配，或者如果你的光猫调成桥接模式，用路由器拨号，则需要这个路由器有ipv6上网功能，否则无法进行ipv6分配的。</p><p><strong>首先提出一点，子网掩码长度是关键。</strong></p><p><strong>—有的地方运营商给你的光猫（光猫拨号）下面的网络设备下发的ipv6子网掩码长度是64位的，那么这个ipv6是不能下发给下面的路由器进行ipv6的分配的，也就是说，光猫接的路由器是可以获得ipv6公网地址的，大但是，那个路由器下面接的设备或者wifi连接的设备，是不能享有ipv6公网地址的，只能获得ipv6私网地址，通过ipv6上网就只能靠NAT6，那么ipv6公网的特性就没有了，那ipv6就是放屁了。</strong></p><p>如果你的运气很好，获得的ipv6<strong>子网掩码</strong>是48位，54位这种小于64位的，是可以进行的，只要在光猫下接的路由器开启ipv6上网功能，开启NATIVE就可以给路由器下面的设备分发ipv6公网地址了。</p><p><strong>—如果你不太懂的话就直接把路由器设置成中继模式，这样路由器相当于一个交换机+AP（无线接入点）这样还是由光猫进行分配ipv6，肯定是没问题的。还有就是交换机，交换机无论是二层还是三层，都是支持ipv6的，正常来讲一个普通交换机是二层的，插上网线就能用了，不需要为ipv6额外设置。</strong></p><p><strong>—手机是默认开启ipv6的，电脑需要在适配器里面调整开启ipv6</strong></p><p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/986ac3a914520bee2d8b8e372f1497ff.png"></p><p>开启之后，电脑便会获得ipv6地址了，需要查看一下ipv6的前面几个数字，一般来说不是字母，那就是公网地址了</p><p>比如</p><p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/e33a26419a529c5422513c677afe0c5f.png"></p><p>然后进行ipv6网络测试，打开<a href="https://ipw.cn/">IP查询(ipw.cn) | IPv6测试 | IPv6在线Ping测试 | IPv6网站检测 | IPv6网站测速 | IPv6地址查询 | IP查询(ipw.cn)</a></p><p>即可进行测试，这个网站检测速度比较快</p><p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/a301f8732f0afbbf3583e2271f6e969f.png"></p><p>显示成功就完成了ipv6公网设置。如果喜欢玩mc的小伙伴都开启了ipv6，就可以直接局域网进行联机了，输入ipv6地址就可以连接。</p><p><strong>ipv6都是很难记的，如果需要频繁使用或者需要部署服务，一定要买个域名，然后进行ipv6解析，各种设备都有ddns服务，电脑上也有软件可以配置，就很方便了。</strong></p><p><strong>ipv6连接前提是：双方都有ipv6地址</strong></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用python高效转图片到webp格式</title>
+      <link href="/%E4%BD%BF%E7%94%A8python%E9%AB%98%E6%95%88%E8%BD%AC%E5%9B%BE%E7%89%87%E5%88%B0webp%E6%A0%BC%E5%BC%8F.html"/>
+      <url>/%E4%BD%BF%E7%94%A8python%E9%AB%98%E6%95%88%E8%BD%AC%E5%9B%BE%E7%89%87%E5%88%B0webp%E6%A0%BC%E5%BC%8F.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>WebP是google推出一种图片格式，它的特点就是 支持无损或有损压缩，图像体积也更小 ，在相同画质下，WebP格式图像的体积要比JPEG格式图像小40%，要比PNG格式图像小30%。</strong></p><img src="https://s3.glorytactic.com/v2-eb26a2db34f8ea69619cf730278457cd_720w.webp" width="50%" height="50%"><p>使用在线网站的转格式和压缩图片的网站，效率太低了，于是想了一下本地搞这个转码</p><p>建一个文件夹，里面放要被转格式的图片，然后把这个目录的绝对路径，例如：C:\Users\Desktop</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- codeing = utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Time :2023/5/27 18:24</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line">suffix = [<span class="string">&#x27;JPG&#x27;</span>, <span class="string">&#x27;PNG&#x27;</span>, <span class="string">&#x27;JPEG&#x27;</span>, <span class="string">&#x27;ICO&#x27;</span>, <span class="string">&#x27;BMP&#x27;</span>]</span><br><span class="line">path = <span class="built_in">input</span>(<span class="string">&quot;输入图片所在根目录的绝对路径&quot;</span>)</span><br><span class="line">filelist = os.listdir(path)</span><br><span class="line">t1 = time.time()</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> filelist:</span><br><span class="line">    filepath = path + <span class="string">&quot;\\&quot;</span> + file</span><br><span class="line">    <span class="keyword">if</span> filepath.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">1</span>].upper() <span class="keyword">in</span> suffix:  <span class="comment"># 必须符合后缀类型</span></span><br><span class="line">        <span class="built_in">print</span>(filepath)</span><br><span class="line">        im = Image.<span class="built_in">open</span>(filepath).convert(<span class="string">&quot;RGB&quot;</span>)</span><br><span class="line">        im.thumbnail((<span class="built_in">int</span>(im.size[<span class="number">0</span>] / <span class="number">1.5</span>), <span class="built_in">int</span>(im.size[<span class="number">1</span>] / <span class="number">1.5</span>)), Image.ANTIALIAS)  <span class="comment"># 等比例转大小，Image.ANTIALIAS高品质</span></span><br><span class="line">        im.save(filepath.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>] + <span class="string">&#x27;.webp&#x27;</span>)</span><br><span class="line"></span><br><span class="line">t2 = time.time()</span><br><span class="line">index = <span class="built_in">int</span>(t2 - t1) * <span class="number">1000</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;全部转换成功,耗时:&#x27;</span> + <span class="built_in">str</span>(index) + <span class="string">&#x27;ms&#x27;</span>)</span><br></pre></td></tr></table></figure><p>在做的过程中有想过多线程处理，应该更快一点，但是测试后面一看，转格式速度很快，小批量的图片博客使用，根本没必要，于是就是代码简单一点也好用</p><p>平均一个图片转码0.6s</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记一次闲鱼捡垃圾</title>
+      <link href="/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%97%B2%E9%B1%BC%E6%8D%A1%E5%9E%83%E5%9C%BE.html"/>
+      <url>/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%97%B2%E9%B1%BC%E6%8D%A1%E5%9E%83%E5%9C%BE.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>型号是H3C的S5120-28C-EI</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;交换机 捡垃圾&quot;</span> <span class="attr">content</span>=<span class="string">&quot;踩坑记录&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><img src="https://s3.glorytactic.com/1685024512160.webp" width="50%" height="50%"><p><strong>12年的三层交换机了，我一看价格200块钱，算便宜了，感觉这垃圾可捡</strong></p><p><strong>性能上：包转发率96M，很强了，交换容量也满足线速（全双工最大速度），背板容量192Gbps，支持静态路由，可惜无动态路由RIP或OSPF（悲</strong></p><p><strong>使用的时候使用RJ45转USB的console线进行连接配置</strong></p><img src="https://s3.glorytactic.com/1685024516855.webp" width="50%" height="50%"><p><strong>性能上没什么好说的，完全够用，槽点就是不静音，风扇转速挺高，挺吵人的，这也是为什么我已经挂在闲鱼上出售的原因</strong></p><p><strong>如果真要自用的话，我感觉捡二手的H3C MINI S1224，24口千兆，二层不可管理交换机，不带R的版本，带R是机柜版本，更长一点，不带R家用不错，反正静音很好呀，全千兆，也不差了，万兆其实是没必要的</strong></p><img src="https://s3.glorytactic.com/1685024521893.webp" width="20%" height="100%"><p><strong>这个H3C MINI S1224R和S1224是一个价格，只是大小不一样罢了，像这种企业主要做线下的售卖，京东淘宝旗舰店都是不划算的，相对来说划算的就是找闲鱼的经销商，这个全新拿下也就300块，二手的话能蹲到100块钱包邮的，不过那种品相就差点了</strong></p><img src="https://s3.glorytactic.com/1685024526923.webp" width="20%" height="50%">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/hello-world.html"/>
+      <url>/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
