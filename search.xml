@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>“我的IPV6不能被访问？这些细节要注意！”</title>
+      <link href="/%E2%80%9C%E6%88%91%E7%9A%84IPV6%E4%B8%8D%E8%83%BD%E8%A2%AB%E8%AE%BF%E9%97%AE%EF%BC%9F%E8%BF%99%E4%BA%9B%E7%BB%86%E8%8A%82%E8%A6%81%E6%B3%A8%E6%84%8F%EF%BC%81%E2%80%9D.html"/>
+      <url>/%E2%80%9C%E6%88%91%E7%9A%84IPV6%E4%B8%8D%E8%83%BD%E8%A2%AB%E8%AE%BF%E9%97%AE%EF%BC%9F%E8%BF%99%E4%BA%9B%E7%BB%86%E8%8A%82%E8%A6%81%E6%B3%A8%E6%84%8F%EF%BC%81%E2%80%9D.html</url>
+      
+        <content type="html"><![CDATA[<p>有的人按上一篇文章开启了ipv6并且正确获取了公网ipv6后发现不能被访问，他们就用ping ipv6的方式进行验证，发现ping不通，就说不能被访问，这个是有问题的。</p><p>因为ping使用的是ICMP协议，windows系统的防火墙是默认关闭对外网的回显的，需要手动开启相应的入站规则才能访问，或者更暴力的方法就是直接关闭防火墙。</p><p>下面是教程</p><p>1.首先先进行ping一下自己ipv6</p><p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/d7906da9e95ee261c1affadcf57370bb.webp"></p><p>发现ping不同，查看可能失败的原因，如果你按我上一篇ipv6开启的文章来就只有防火墙的原因了</p><p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/91fef4dd07eace7539e084afaf35bff9.webp"></p><p>打开防火墙，点击高级设置</p><img src="https://cdn.glorytactic.com/cdn-img/2023/07/ed3a46683768b1f32619664142eb7fd9.webp"/><p>选择虚拟机监控，ICMPv6回显请求，选择开启就行</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>“公网ipv6时代,还不来开启一下？”</title>
       <link href="/%E2%80%9C%E5%85%AC%E7%BD%91ipv6%E6%97%B6%E4%BB%A3-%E8%BF%98%E4%B8%8D%E6%9D%A5%E5%BC%80%E5%90%AF%E4%B8%80%E4%B8%8B%EF%BC%9F%E2%80%9D.html"/>
       <url>/%E2%80%9C%E5%85%AC%E7%BD%91ipv6%E6%97%B6%E4%BB%A3-%E8%BF%98%E4%B8%8D%E6%9D%A5%E5%BC%80%E5%90%AF%E4%B8%80%E4%B8%8B%EF%BC%9F%E2%80%9D.html</url>
